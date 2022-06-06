@@ -1,0 +1,2 @@
+console.log("Script Working");const burger=document.querySelector(".burger"),mobileNav=document.querySelector(".header__mobile");console.log(mobileNav);let menuOpen=!1;burger.addEventListener("click",(()=>{menuOpen?(burger.classList.remove("open"),mobileNav.classList.remove("visible"),menuOpen=!1):(burger.classList.add("open"),mobileNav.classList.add("visible"),menuOpen=!0)})),document.addEventListener("DOMContentLoaded",yall);
+//# sourceMappingURL=script.js.map
