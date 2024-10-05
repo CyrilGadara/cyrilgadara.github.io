@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Development Test</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                padding: 20px;
+            }
+            h1,
+            h2,
+            h3 {
+                color: #333;
+            }
+            pre {
+                background-color: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+                overflow: auto;
+            }
+            code {
+                background-color: #f4f4f4;
+                padding: 2px 5px;
+                border-radius: 3px;
+            }
+            .question {
+                margin-bottom: 20px;
+            }
+            .question ul {
+                list-style: none;
+                padding: 0;
+            }
+            .question ul li {
+                margin-bottom: 10px;
+            }
+            .coding-task pre,
+            .code-analysis pre {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web Development Test</h1>
+
+        <section class="multiple-choice-questions">
+            <h2>Part 1: Multiple Choice Questions (10 points)</h2>
+            <div class="question">
+                <p>1. Which HTML5 semantic tag is most appropriate for the main content area of a webpage?</p>
+                <ul>
+                    <li>a) &lt;div&gt;</li>
+                    <li>b) &lt;main&gt;</li>
+                    <li>c) &lt;section&gt;</li>
+                    <li>d) &lt;article&gt;</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>2. What is the correct way to select an element with the ID "header" using JavaScript?</p>
+                <ul>
+                    <li>a) <code>document.getElementByName('header')</code></li>
+                    <li>b) <code>document.querySelector('#header')</code></li>
+                    <li>c) <code>document.getElementById('header')</code></li>
+                    <li>d) Both b and c are correct</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>3. Which CSS property is used to change the text color of an element?</p>
+                <ul>
+                    <li>a) <code>font-color</code></li>
+                    <li>b) <code>text-color</code></li>
+                    <li>c) <code>color</code></li>
+                    <li>d) <code>foreground-color</code></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>4. What does the following JavaScript code do?</p>
+                <pre><code>const fruits = ["apple", "banana", "cherry"];
+ fruits.forEach((fruit) => console.log(fruit));
+</code></pre>
+                <ul>
+                    <li>a) It creates a new array of fruits</li>
+                    <li>b) It prints each fruit to the console</li>
+                    <li>c) It removes all fruits from the array</li>
+                    <li>d) It sorts the fruits alphabetically</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>5. Which HTML attribute is used to store custom data?</p>
+                <ul>
+                    <li>a) <code>custom-*</code></li>
+                    <li>b) <code>data-*</code></li>
+                    <li>c) <code>user-*</code></li>
+                    <li>d) <code>meta-*</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="coding-tasks">
+            <h2>Part 2: Coding Tasks (20 points)</h2>
+
+            <div class="question">
+                <p>
+                    6. HTML Structure (5 points): Create an HTML structure to display a list of blog posts using semantic HTML tags. For each post,
+                    include:
+                </p>
+                <ul>
+                    <li>A title</li>
+                    <li>A short excerpt of the content (e.g., the first 100 characters)</li>
+                    <li>A placeholder image</li>
+                    <li>The creation date</li>
+                </ul>
+                <p>Use semantic HTML tags such as <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code>.</p>
+            </div>
+
+            <div class="question">
+                <p>7. CSS Styling (5 points): Write CSS to style the blog posts structure you created in question 6. Include the following:</p>
+                <ul>
+                    <li>Set a layout where the image is displayed on the left, and the title, excerpt, and date are displayed on the right.</li>
+                    <li>Style the title with a specific font and size.</li>
+                    <li>Ensure the layout is responsive for different screen sizes.</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>
+                    8. JavaScript Functionality (10 points): Write a JavaScript function that fetches data from a JSON file named "blog-posts.json"
+                    and populates the page with the blog posts. The JSON file structure is as follows:
+                </p>
+                <pre>
+<code>
+    [
+        {
+            "title": "First Blog Post",
+            "content": "This is the content of the first blog post. It contains a detailed explanation of the topic covered in the post.",
+            "created_at": "2024-10-01",
+            "image": "placeholder1.jpg"
+        },
+        {
+            "title": "Second Blog Post",
+            "content": "This is the content of the second blog post. It provides insights into another important topic.",
+            "created_at": "2024-10-02",
+            "image": "placeholder2.jpg"
+        },
+        {
+            "title": "Third Blog Post",
+            "content": "This is the content of the third blog post, which gives a brief overview of a new concept.",
+            "created_at": "2024-10-03",
+            "image": "placeholder3.jpg"
+        },
+        {
+            "title": "Fourth Blog Post",
+            "content": "This blog post covers another interesting topic. Read more for details.",
+            "created_at": "2024-10-04",
+            "image": "placeholder4.jpg"
+        }
+    ]
+</code>
+                </pre>
+                <p>Your function should:</p>
+                <ul>
+                    <li>Fetch the data using the <code>fetch()</code> method</li>
+                    <li>Loop through the blog posts and display each post's title, first 100 characters of the content, creation date, and image</li>
+                    <li>Append the posts dynamically to the blog posts section of the page</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="code-analysis">
+            <h2>Part 3: Code Analysis (10 points)</h2>
+            <div class="question">
+                <p>
+                    9. Analyze the following HTML, CSS, and JavaScript code. Identify any issues or potential improvements, and explain how you would
+                    fix them.
+                </p>
+
+                <h3>HTML:</h3>
+                <pre><code>&lt;div class="container"&gt;
+    &lt;header id="header"&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article class="post"&gt;
+            &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+            &lt;p&gt;This is the content of the blog post.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;aside class="sidebar"&gt;
+        &lt;h3&gt;Related Posts&lt;/h3&gt;
+        &lt;ul id="relatedPosts"&gt;&lt;/ul&gt;
+    &lt;/aside&gt;
+&lt;/div&gt;
+</code></pre>
+
+                <h3>CSS:</h3>
+                <pre><code>.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+</code></pre>
+
+                <h3>JavaScript:</h3>
+                <pre><code>function fetchRelatedPosts() {
+    fetch("blog-posts.json")
+        .then((response) => response.json())
+        .then((data) => {
+            var relatedPostsList = document.getElementById("relatedPosts");
+            data.relatedPosts.forEach(post => {
+                relatedPostsList.innerHTML += `&lt;li&gt${post.title&lt;/li&gt`;
+            });            
+        });
+}
+
+fetchRelatedPosts();
+</code></pre>
+                <p>Provide your analysis and suggestions for improvement.</p>
+            </div>
+        </section>
+
+        <p>Total Points: 40</p>
+    </body>
+</html>
